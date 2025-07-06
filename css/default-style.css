@@ -1,0 +1,66 @@
+@font-face {
+    font-family: "protoSans";
+    src: url("../font/protoSans.ttf")
+}
+
+@font-face {
+    font-family: "montserrat";
+    src: url("../font/montserrat/Montserrat-Black.ttf");
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "montserrat";
+    src: url("../font/montserrat/Montserrat-ExtraBold.ttf");
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "montserrat";
+    src: url('../font/montserrat/Montserrat-Light.ttf');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "montserrat";
+    src: url('../font/montserrat/Montserrat-Regular.ttf');
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "montserrat";
+}
+
+html {
+    font-size: 16px;
+}
+
+.page-name {
+    font-family: "protoSans";
+    font-size: 5rem;
+}
+
+.page-name__text {
+    font-size: 2rem;
+    transform: rotate(90deg);
+}
+
+h1{
+    font-size: var(--title-size);
+}
+
+h2, label {
+    font-size: var(--sub-title-size);
+}
+
+h3, a, p{
+    font-size: var(--base-text-size);
+}
+
+.gray-card {
+    background-color: var(--cards-bg-color);
+    border-radius: 20px;
+}

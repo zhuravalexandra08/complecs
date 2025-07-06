@@ -1,0 +1,48 @@
+.nav {
+    position: fixed;
+    height: 549px;
+    background: var(--bg-color);
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 20px;
+    padding: 23px;
+    z-index: 10;
+}
+
+.nav__title {
+    text-align: center;
+}
+
+.nav__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+    margin-top: 33px;
+    perspective: 700px;
+}
+
+.nav__menu-item {
+    position: relative;
+    height: 70px;
+    width: 70px;
+    border-radius: 10px;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+}
+
+.nav__menu-item:hover {
+    transform: rotateY(180deg);
+}
+
+.nav__menu-item-front, .nav__menu-item-back{
+    background: var(--cards-bg-color);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+}
+
+.nav__menu-item-front {
+    z-index: 2;
+}
