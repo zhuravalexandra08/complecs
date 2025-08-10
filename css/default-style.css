@@ -87,10 +87,6 @@ h3, a, p{
 }
 
 @media (max-width: 428px) {
-    body {
-        max-width: 428px;
-        overflow: hidden;
-    }
     .page-name {
         width: 0;
         height: 0;
