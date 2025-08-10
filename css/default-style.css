@@ -45,7 +45,6 @@ html {
 
 .page-name__text {
     font-size: 2rem;
-    transform: rotate(90deg);
 }
 
 h1{
@@ -63,4 +62,41 @@ h3, a, p{
 .gray-card {
     background-color: var(--cards-bg-color);
     border-radius: 20px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.page-name {
+    position: absolute;
+    right: 50px;
+    height: 237px;
+    z-index: 4;
+    width: 94px;
+}
+
+.page-name__text {
+    position: absolute;
+    display: inline-block;
+    transform: rotate(90deg) translate(50%, -50%);
+    width: max-content;
+    left: 0;
+    top: 0;
+}
+
+@media (max-width: 428px) {
+    body {
+        max-width: 428px;
+        overflow: hidden;
+    }
+    .page-name {
+        width: 0;
+        height: 0;
+    }
+    .page-name__text {
+        height: 0;
+        width: 0;
+    }
 }

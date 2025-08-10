@@ -1,0 +1,29 @@
+.footer {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+    padding: 75px 0 113px;
+}
+
+
+.footer__title, .footer__text {
+    padding-bottom: 29px;
+    font-weight: bold;
+}
+
+.footer__list {
+    list-style-type: none;
+    text-align: center;
+    font-weight: bold;
+}
+
+.footer__link {
+    padding-bottom: 29px;
+}
+
+.footer__copyright {
+    padding-top: 180px;
+}
