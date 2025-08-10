@@ -80,16 +80,19 @@ header {
         transform: translate(-30%, -30%);
     }
     .header__content-right {
-        width: 0;
-        height: 0;
+        /* width: 0;
+        height: 0; */
+        display: none;
     }
     .header__content-right img {
-        width: 0;
-        height: 0;
+        /* width: 0;
+        height: 0; */
+        display: none;
     }
     .header__content-right::before {
-        width: 0;
-        height: 0;
+        /* width: 0;
+        height: 0; */
+        display: none;
     }
     .header__left-button {
         transform: translateX(10%);
